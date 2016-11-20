@@ -41,3 +41,5 @@ config :nimbus, Nimbus.Repo,
   database: "nimbus_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :nimbus, github_base_url: "https://github.com/neojin/nimbus/blob/master/"

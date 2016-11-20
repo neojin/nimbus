@@ -31,6 +31,28 @@
       </header>
       <main class="mdl-layout__content">
         <%= render @view_module, @view_template, assigns %>
+        <%= if assigns[:github_urls] do %>
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset">
+              <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp github-links-table">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric fullwidth">Relevant File(s)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <%= for { path, url } <- assigns[:github_urls] do %>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">
+                        <%= link path, to: url %>
+                      </td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <% end %>
       </main>
     </div>
   </body>

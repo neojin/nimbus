@@ -5,3 +5,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+table.github-links-table {
+  width: 100%;
+}
+
+table.github-links-table th {
+  width: 100%;
+}
