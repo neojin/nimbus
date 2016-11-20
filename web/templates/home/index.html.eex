@@ -1,4 +1,7 @@
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-  <div class="grid-item">asd</div>
-  <div class="grid-item">asd</div>
+<div class="masonry" data-masonry='{ "itemSelector": ".item" }'>
+  <div class="item">
+    <%= link to: "/simple-crud-ui" do %>
+      Simple CRUD via UI
+    <% end %>
+  </div>
 </div>

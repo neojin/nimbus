@@ -17,6 +17,7 @@ defmodule Nimbus.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", HomeController, :index
+    resources "/simple-crud-ui", SimpleCrudUiController
   end
 
   # Other scopes may use custom stacks.
