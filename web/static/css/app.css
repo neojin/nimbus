@@ -6,10 +6,25 @@ html, body {
   padding: 0;
 }
 
+.clear {
+  clear: both;
+}
+
+main.mdl-nimbus-main {
+  padding: 20px;
+}
+
 table.github-links-table {
   width: 100%;
 }
 
 table.github-links-table th {
   width: 100%;
+}
+
+.nimbus-sample-card.mdl-card {
+  width: 320px;
+  float: left;
+  margin: 1rem;
+  position: relative;
 }
