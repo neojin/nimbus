@@ -1,1 +1,7 @@
 /* This file is for your main application css. */
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
