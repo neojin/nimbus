@@ -5,7 +5,7 @@ defmodule Nimbus.UserSocket do
   # channel "room:*", Nimbus.RoomChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
+  transport :websocket, Phoenix.Transports.WebSocket, timeout: 45_000 # set timeout because heroku has 55 sec window
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can
