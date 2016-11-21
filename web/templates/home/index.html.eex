@@ -1,3 +1,4 @@
+<div class="mdl-typography--headline center">A Collection of Examples for the Phoenix Web Framework</div>
 <div class="nimbus-sample-card mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title mdl-card--expand">
     <h2 class="mdl-card__title-text">Simple CRUD via UI</h2>
