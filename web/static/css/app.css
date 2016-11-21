@@ -10,6 +10,11 @@ html, body {
   clear: both;
 }
 
+header .subheading {
+  font-size: 95%;
+  color: rgba(255,255,255,.50);
+}
+
 main.mdl-nimbus-main {
   padding: 20px;
 }

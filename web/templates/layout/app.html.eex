@@ -25,7 +25,10 @@
           </a>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-navigation">
-            <a href="#overview" class="mdl-navigation__link">blog</a>
+            <span class="mdl-layout-title subheading">A Collection of Examples for the Phoenix Web Framework</span>
+            <a href="https://github.com/neojin/nimbus" class="mdl-navigation__link">
+              <i class="fa fa-github fa-lg"></i>
+            </a>
           </div>
         </div>
       </header>
@@ -33,6 +36,7 @@
         <%= render @view_module, @view_template, assigns %>
         <div class="clear"></div>
         <%= render "github.html", urls: assigns[:github_defined_urls], description: "Relevant Files for this controller/action" %>
+        <br/>
         <%= render "github.html", urls: assigns[:github_common_urls], description: "Common Files typically involved in every controller/action" %>
       </main>
     </div>
