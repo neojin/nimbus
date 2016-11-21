@@ -12,7 +12,7 @@ html, body {
 
 header .subheading {
   font-size: 95%;
-  color: rgba(255,255,255,.50);
+  color: rgba(255,255,255,.5);
 }
 
 main.mdl-nimbus-main {
@@ -27,7 +27,7 @@ main.mdl-nimbus-main {
 }
 
 .github-panel {
-  margin-top: 30px;
+  margin-top: 70px;
   padding: 20px;
   background-color: rgba(0,0,0,.1);
 }
@@ -37,11 +37,6 @@ main.mdl-nimbus-main {
   color: rgba(0,0,0,.5);
 }
 
-table.github-links-table {
+table.full-width {
   width: 100%;
 }
-
-table.github-links-table th {
-  width: 100%;
-}
-

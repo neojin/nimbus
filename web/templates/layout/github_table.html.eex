@@ -1,7 +1,7 @@
 <%= if @urls do %>
-  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp github-links-table">
+  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width">
     <tr>
-      <th class="mdl-data-table__cell--non-numeric fullwidth"><%= @description %></th>
+      <th class="mdl-data-table__cell--non-numeric"><%= @description %></th>
     </tr>
     <%= for { path, url } <- @urls do %>
       <tr>
