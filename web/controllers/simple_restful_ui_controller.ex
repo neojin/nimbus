@@ -4,7 +4,7 @@ defmodule Nimbus.SimpleRestfulUiController do
 
   # NOTE : is there a better way to do this?
   plug Nimbus.GithubLink, [
-    "web/controllers/simple_resftul_ui_controller.ex",
+    "web/controllers/simple_restful_ui_controller.ex",
     "web/templates/simple_restful_ui/index.html.eex",
     "web/views/simple_restful_ui_view.ex",
     "web/models/company.ex",
