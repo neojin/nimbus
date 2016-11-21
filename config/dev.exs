@@ -11,9 +11,7 @@ config :nimbus, Nimbus.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-                    cd: Path.expand("../", __DIR__)]]
-
+  watchers: [npm: ["run", "watch"]]
 
 # Watch static and templates for browser reloading.
 config :nimbus, Nimbus.Endpoint,
@@ -41,5 +39,3 @@ config :nimbus, Nimbus.Repo,
   database: "nimbus_dev",
   hostname: "localhost",
   pool_size: 10
-
-config :nimbus, github_base_url: "https://github.com/neojin/nimbus/blob/master/"
