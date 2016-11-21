@@ -1,4 +1,4 @@
-/* This file is for your main application css. */
+/* TODO: convert to sass */
 
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -32,4 +32,14 @@ table.github-links-table th {
   float: left;
   margin: 1rem;
   position: relative;
+}
+
+.github-panel {
+  padding: 20px;
+  background-color: rgba(0,0,0,.1);
+}
+
+.github-panel .logo {
+  text-align: center;
+  color: rgba(0,0,0,.5);
 }
