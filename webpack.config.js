@@ -1,11 +1,10 @@
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: ["./web/static/css/app.css", "./web/static/js/app.js"],
   output: {
     path: "./priv/static",
-    filename: "app.js"
+    filename: "js/app.js"
   },
   module: {
     loaders: [{
@@ -18,7 +17,7 @@ module.exports = {
       }
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract("style", "css")
+      loader: 'style!css?sourceMap'
     }, {
       test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
       loader: "url?limit=10000&mimetype=application/font-woff"
@@ -40,7 +39,6 @@ module.exports = {
     modulesDirectories: [ "node_modules", __dirname + "/web/static/js" ]
   },
   plugins: [
-    new ExtractTextPlugin("css/app.css"),
     new CopyWebpackPlugin([{ from: "./web/static/assets" }])
   ]
 };
